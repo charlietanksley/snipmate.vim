@@ -183,7 +183,18 @@ snippet tf
 #-----------------#
 # Beamer Snippets #
 #-----------------#
+# I think I almost always want to center text. So that is default.
 snippet fr
+	\begin{frame} \frametitle{${1: Frame title}} %{{{
+		\begin{center}
+
+		${2}
+
+		\end{center}
+	\end{frame}
+	%}}}
+# A frame that doesn't center:
+snippet fr*
 	\begin{frame} \frametitle{${1: Frame title}} %{{{
 
 		${2}
