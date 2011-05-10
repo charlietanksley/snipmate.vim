@@ -207,3 +207,44 @@ snippet frnt
 		${2}
 	\end{frame}
 	%}}}
+#
+
+#--------------#
+# Basic Setups #
+#--------------#
+# I hate starting new projects.  The boilerplate is annoying.  So here are
+# some snippets to automate that.
+
+# First, a tufte-handout layout
+snippet tuftesetup
+	% prologue {{{
+	\documentclass{tufte-handout}
+	\usepackage{amsmath}
+
+	% Set up the images/graphics package
+	\usepackage{graphicx}
+	\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+	\graphicspath{{graphics/}}
+	\usepackage{hyperref}
+	\usepackage{epstopdf}
+
+	\title{}
+	\author[Charlie Tanksley]{Charlie Tanksley}
+
+	\usepackage{setspace}
+
+	% BIBLIOGRAPHY STUFF
+	\usepackage{natbib}
+	\setcitestyle{round,aysep={},authoryear}
+
+	%}}}
+
+	\begin{document}
+	\maketitle
+	\begin{abstract} %{{{
+
+	\end{abstract}
+
+	%}}}
+#
+
