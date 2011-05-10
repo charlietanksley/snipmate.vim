@@ -227,6 +227,8 @@ snippet tuftesetup
 	\graphicspath{{graphics/}}
 	\usepackage{hyperref}
 	\usepackage{epstopdf}
+	\usepackage{enumerate}
+	\setcounter{secnumdepth}{3}
 
 	\title{}
 	\author[Charlie Tanksley]{Charlie Tanksley}
@@ -244,7 +246,16 @@ snippet tuftesetup
 	\begin{abstract} %{{{
 
 	\end{abstract}
-
 	%}}}
+
+
+
+	\begin{raggedright}
+	\singlespace
+
+	\bibliographystyle{Phil_Review}
+	\bibliography{tanksley}
+	\end{raggedright}
+	\end{document}
 #
 
