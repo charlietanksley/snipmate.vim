@@ -137,8 +137,9 @@ snippet sol
 	\begin{solution}
 		${1}
 	\end{solution}
-# 
-# Citations
+#### CITATIONS
+#
+# Natbib Citations
 snippet cpp
 	\citep[${1:pp}]{${2:key}}${3}
 snippet cp
@@ -147,6 +148,20 @@ snippet ctt
 	\citet[${1:pp}]{${2:key}}${3}
 snippet ct
 	\citet{${1}}${2}
+#
+## BibLaTeX Citations
+# cite in parentheses w/pages
+snippet ppc
+	\parencite[${1:pp}]{${2:key}}${3}
+# cite in parentheses w/out pages
+snippet pc
+	\parencite{${1}}${2}
+# cite in text w/pages
+snippet tpc
+	\textcite[${1:pp}]{${2:key}}${3}
+# cite in text w/out pages
+snippet ct
+	\textcite{${1}}${2}
 #
 # 
 # footnote
