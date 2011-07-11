@@ -1,11 +1,11 @@
 # Test (single)
 snippet test
-	(test "${1:description}" ${2:expected-value} ${3:expression})
+	(test "${1:description}" ${2:expected-value} (${3:expression}))
 # Test block
 snippet tb
 	(test-begin "${1:name}")
 			${2}
-	(test-end "${3:1}")
+	(test-end "$1")
 # Test Group
 	(test-group "${1:name}"
 			${2}
